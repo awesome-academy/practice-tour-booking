@@ -1,8 +1,11 @@
-<div class="jumbotron">
-  <h3 class="display text-center">New Discount</h3>
+
+
+  <div class="modal-header">
+  <button type="button" class="close" data-dismiss="modal">x</button>
+  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
 </div>
-<p>
-<%= form_with scope: :discount, url: discounts_path, local: true do |form| %>
+<div class="modal-body">
+  <%= form_with scope: :discount, url: discounts_path, local: true do |form| %>
   <%= render 'error' %>
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
@@ -17,3 +20,7 @@
   <% end %>
 </div>
   </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary">Save</button>
+</div>

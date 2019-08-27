@@ -3,6 +3,10 @@ class CategoriesController < ApplicationController
 
   def index
     @category = Category.all
+
+
+    # @q = Category.ransack(params[:q])
+    # @category = @q.result
   end
 
   def new
